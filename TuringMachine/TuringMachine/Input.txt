@@ -1,0 +1,23 @@
+# l'input sarà abcdefghil*
+# l'output sarà ABCDEFGHIL
+# MDT
+INPUT-ALPHABET abcdefghil*
+OUTPUT-ALPHABET ABCDEFGHIL
+STATES q0 q1 q2 q3 q4 q5 q6 q7 q8 q9
+HALTS T
+SSTATE q0
+# SINDEX 0
+# MOV L R N
+INSTRUCTIONS
+q0 a > q1 A R
+q1 b > q2 B R
+q2 c > q3 C R
+q3 d > q4 D R
+q4 e > q5 E R
+q5 f > q6 F R
+q6 g > q7 G R
+q7 h > q8 H R
+q8 i > q9 I R
+q9 l > q0 L R
+# (q0, *): il programma termina
+q0 * > T
